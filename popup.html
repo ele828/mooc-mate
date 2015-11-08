@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/semantic.css">
     <script src="scripts/vendor/jquery.js"></script>
     <script src="scripts/vendor/semantic.js"></script>
@@ -11,7 +12,7 @@
 <body>
 
     <style type="text/css">
-        .container {
+        .cont {
             width: 300px;
             padding: 20px;
         }
@@ -25,15 +26,27 @@
         .purple {
             color: #4f20b5;
         }
-        .container {
+        .cont {
             display: none;
         }
         .profile {
-            padding: 20px;
+            display: none;
+            padding: 10px;
+        }
+        .avatar img {
+            width: 80px;
+            height: 80px;
+        }
+        .avatar img {
+            padding: 5px;
+            border: 1px dashed #4f20b5;
+            box-shadow: 0px 0px 10px #ccc;
+            border-radius: 10px;
+
         }
     </style>
-    <div class="container">
-        <h2 class="center purple">Mooc Mate</h2>
+    <div class="cont">
+        <h2 class="center purple"><i class="fa fa-youtube-play"></i> Mooc Mate</h2>
         <form class="ui form">
           <div class="field">
             <label>User Name</label>
@@ -45,25 +58,29 @@
           </div>
         </form>
         <div class="center splitor">
-            <button class="ui violet button" type="submit" id="login-btn">Log In</button>
-            <button class="ui green button" type="submit" id="reg-btn">Register</button>
+            <button class="ui violet button" type="submit" id="login-btn"><i class="fa fa-user"></i> Log In</button>
+            <button class="ui green button" type="submit" id="reg-btn"><i class="fa fa-smile-o"></i> Register</button>
         </div>
     </div>
 
     <div class="profile">
         <div class="ui four column doubling grid container">
           <div class="row">
-              <div class="column">
-                <p>2fsdfsda</p>
-                <p></p>
+              <div class="column avatar">
+                <img src="images/avatar.jpeg" alt="">
               </div>
               <div class="column">
-                <p>fdasfdsa</p>
-                <p></p>
+                <h2 class="username center"></h2>
+                <a name="last-name" class="ui violet button go-profile-btn"
+                    href="http://www.baidu.com" target="_blank"
+                >My Profile</a>
               </div>
           </div>
 
-          <div class="row"></div>
+          <div class="row">
+                <input type="button" name="last-name" class="ui yellow button log-btn" value="Log Out">
+                <input type="button" name="last-name" class="ui yellow button shot-btn" value="Scree Shot">
+          </div>
           <div class="row"></div>
           <div class="row"></div>
         </div>
