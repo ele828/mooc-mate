@@ -203,6 +203,10 @@ if ( cur_domain in siteMap ) {
                                 .on(
                                     'click',
                                     function() {
+                                        var img = "";
+                                        if (imgList.length >0) {
+                                            img = imgList[0].src;
+                                        }
                                         var title = $(".moocmate-notes-title").val().trim();
                                         var content = $(".moocmate-notes-desc").val().trim();
                                         Utils.requestPOST({
@@ -216,7 +220,7 @@ if ( cur_domain in siteMap ) {
                                                 chapter: state.getChapterTitle(),
                                                 content: content,
                                                 current_time: cur_time,
-                                                img: imgList[0].src || "",
+                                                img:  img,
                                                 time: (new Date()).valueOf()
                                             }
                                         })

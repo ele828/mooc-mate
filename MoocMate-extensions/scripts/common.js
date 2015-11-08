@@ -1,4 +1,4 @@
-var root = "http://10.209.202.152:8080"
+var root = "http://10.209.202.9:8080"
 var api = {
     login: root + "/api/login",
     create: root + "/api/video/add",

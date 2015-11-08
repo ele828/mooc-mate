@@ -1,16 +1,3 @@
-// chrome.tabs.captureVisibleTab(null, {
-//
-//  format : "png",
-//
-//  quality : 100
-//
-// }, function(data) {
-//
-//  console.log(data)
-// //  sendResponse({data: "123"})
-//
-// });
-
 chrome.extension.onRequest.addListener(
     function(request, sender, sendResponse) {
         // sendResponse({data: "123"});
@@ -29,7 +16,6 @@ chrome.extension.onRequest.addListener(
 
     }
 );
-
 
 chrome.storage.sync.get(["logined", "username"],
     function(data){
